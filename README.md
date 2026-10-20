@@ -16,7 +16,7 @@ Then, start the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+Open [http://localhost:4500](http://localhost:4500) in your browser to view the application.
 
 You can start editing the page by modifying `app/page.tsx`. The page updates automatically as you make changes.
 
