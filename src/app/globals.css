@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #faf9f7;
+  --foreground: #1a1c1b;
+  --surface: #faf9f7;
+  --surface-lowest: #ffffff;
+  --surface-low: #f4f3f1;
+  --surface-container: #efeeec;
+  --surface-high: #e9e8e6;
+  --surface-highest: #e3e2e0;
+  --primary: #0037b0;
+  --primary-container: #1d4ed8;
+  --on-primary: #ffffff;
+  --secondary: #525f75;
+  --secondary-container: #d6e3fe;
+  --on-secondary: #ffffff;
+  --on-secondary-container: #1e293b;
+  --tertiary: #712ae2;
+  --outline: #747686;
+  --outline-variant: #c4c5d7;
+  --border-hairline: #e3e2e0;
+  --card-shadow: 0 1px 10px rgba(0, 0, 0, 0.04);
+}
+
+.dark {
+  --background: #0a0e1a;
+  --foreground: #f1f5f9;
+  --surface: #0f1524;
+  --surface-lowest: #070a12;
+  --surface-low: #111828;
+  --surface-container: #141c2e;
+  --surface-high: #1a2438;
+  --surface-highest: #202c42;
+  --primary: #7dd3fc;
+  --primary-container: #1d4ed8;
+  --on-primary: #001551;
+  --secondary: #38bdf8;
+  --secondary-container: #1e293b;
+  --on-secondary: #001551;
+  --on-secondary-container: #bae6fd;
+  --tertiary: #a855f7;
+  --outline: #64748b;
+  --outline-variant: #334155;
+  --border-hairline: #1e293b;
+  --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.font-editorial {
+  font-family: var(--font-newsreader), Georgia, serif;
+}
+
+.font-mono-data {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+.font-signature {
+  font-family: 'Caveat', var(--font-caveat), "Segoe Print", "Bradley Hand", "Kalam", cursive;
+}
+
+.brand-signature {
+  font-family: 'Caveat', var(--font-caveat), "Segoe Print", "Bradley Hand", "Kalam", cursive;
+  color: #2b4ec8;
+  transform: rotate(-3.5deg);
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+}
+
+.dark .brand-signature {
+  color: #818cf8;
+}
+
+/* Subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--outline-variant);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--outline);
+}
